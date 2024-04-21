@@ -1,0 +1,93 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2529,         83]
+NotebookOptionsPosition[      1802,         62]
+NotebookOutlinePosition[      2236,         78]
+CellTagsIndexPosition[      2193,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"FindMinimum", "[", 
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[9]:=",ExpressionUUID->"3f0d0d7f-c1f2-42fb-94f9-e4c625ac18d2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "3.2883713955908966`"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "3.425618459492147`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8795313578706923`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"2252de3a-be4c-4660-ae5f-9d594c8bac38"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NMinimize", "[", 
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"Cos", "[", "x", "]"}]}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{3.879531402735793*^9},
+ CellLabel->"In[10]:=",ExpressionUUID->"1c1ab8b1-490c-4650-aff6-d67fa28e6901"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.5610963381910451`"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     RowBox[{"-", "0.8603335890193802`"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8795314039466486`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"b9734ea3-115c-4ce9-a4cd-fdf73329d5ca"]
+}, Open  ]]
+},
+WindowSize->{583.8, 501.59999999999997`},
+WindowMargins->{{Automatic, 278.4000000000001}, {Automatic, 39.6}},
+FrontEndVersion->"13.1 pour Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a2bcf9be-7590-4aef-ba34-212a34118451"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 270, 7, 43, "Input",ExpressionUUID->"3f0d0d7f-c1f2-42fb-94f9-e4c625ac18d2"],
+Cell[853, 31, 304, 7, 32, "Output",ExpressionUUID->"2252de3a-be4c-4660-ae5f-9d594c8bac38"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1194, 43, 262, 6, 43, "Input",ExpressionUUID->"1c1ab8b1-490c-4650-aff6-d67fa28e6901"],
+Cell[1459, 51, 327, 8, 81, "Output",ExpressionUUID->"b9734ea3-115c-4ce9-a4cd-fdf73329d5ca"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

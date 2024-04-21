@@ -1,0 +1,499 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19151,        491]
+NotebookOptionsPosition[     16069,        427]
+NotebookOutlinePosition[     16543,        445]
+CellTagsIndexPosition[     16500,        442]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"BesselJ", "[", 
+  RowBox[{"0", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8741447280340757`*^9, 3.8741447362318583`*^9}, {
+  3.874145147918702*^9, 3.8741451489167414`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"f31a026d-bb44-4ab3-9bd3-7d36726508a3"],
+
+Cell[BoxData[
+ RowBox[{"BesselJ", "[", 
+  RowBox[{"0", ",", "2"}], "]"}]], "Output",
+ CellChangeTimes->{3.8741451495433545`*^9, 3.8782848486392355`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"c0cb6ce6-7858-4892-bd4e-ddd8659abb21"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"BesselJ", "[", 
+   RowBox[{"0", ",", "2"}], "]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[13]:=",ExpressionUUID->"5fc2c704-c655-48f0-9bdd-f2640fb2b174"],
+
+Cell[BoxData["0.22389077914123562`"], "Output",
+ CellChangeTimes->{3.8741451516735477`*^9, 3.8782848487485666`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"7e255174-6fd8-4e04-a3cb-1ac8b5a19209"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"N", "[", 
+    RowBox[{"BesselJ", "[", 
+     RowBox[{"k", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8741456275389566`*^9, 3.8741456278396482`*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"80208492-4b05-4b61-9802-149fdc7ff51a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.22389077914123562`", ",", "0.5767248077568736`", ",", 
+   "0.35283402861563773`", ",", "0.12894324947440206`", ",", 
+   "0.03399571980756842`"}], "}"}]], "Output",
+ CellChangeTimes->{3.8741456285350113`*^9, 3.878284848770667*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"c842bf33-5805-4967-ac55-07ba76193aa7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"10", "*", 
+    RowBox[{"N", "[", 
+     RowBox[{"BesselJ", "[", 
+      RowBox[{"k", ",", "2"}], "]"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8741452265694942`*^9, 3.874145262684375*^9}, {
+  3.8741453042487054`*^9, 3.874145318458719*^9}, {3.8741642748306932`*^9, 
+  3.8741642790979924`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"50754bf8-6bff-4e43-8b6f-05ed050d8464"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2.2389077914123563`", ",", "5.767248077568736`", ",", 
+   "3.5283402861563773`", ",", "1.2894324947440206`", ",", 
+   "0.33995719807568425`"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.874145263522175*^9, {3.874145305608718*^9, 3.8741453191878657`*^9}, 
+   3.8741642801766253`*^9, 3.8782848487979317`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"2b8d1629-de86-4222-8ad5-82c451f175ec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sort", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "0.8955631165649425`", ",", "2.3068992310274945`", ",", 
+    "1.411336114462551`", ",", "0.5157729978976082`", ",", 
+    "0.1359828792302737`"}], "}"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[16]:=",ExpressionUUID->"d3cb4578-bd76-4d7e-badc-5c4d3dcdd07a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.1359828792302737`", ",", "0.5157729978976082`", ",", 
+   "0.8955631165649425`", ",", "1.411336114462551`", ",", 
+   "2.3068992310274945`"}], "}"}]], "Output",
+ CellChangeTimes->{3.874145881853654*^9, 3.878284848822328*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"cd6b56c2-4a4b-4ac5-a228-1b31a4b360cc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BesselJ", "[", 
+  RowBox[{"1", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8741639488015795`*^9, 3.8741639493953247`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"2dc207d4-7e6e-45c8-9a5d-c93af8081b07"],
+
+Cell[BoxData[
+ RowBox[{"BesselJ", "[", 
+  RowBox[{"1", ",", "2"}], "]"}]], "Output",
+ CellChangeTimes->{3.874163950082323*^9, 3.878284848848061*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"6f1cef70-5b8d-4987-8d8f-3b43b8f68d2a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50", "*", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"N", "[", 
+     RowBox[{"BesselJ", "[", 
+      RowBox[{"1", ",", "2"}], "]"}], "]"}], ")"}], "^", "2"}]}]], "Input",
+ CellChangeTimes->{{3.874163974872597*^9, 3.874163981838972*^9}},
+ NumberMarks->False,
+ CellLabel->"In[18]:=",ExpressionUUID->"6d14fd1e-e1f2-457e-93e9-82d109bdef5c"],
+
+Cell[BoxData["16.630575194110143`"], "Output",
+ CellChangeTimes->{3.874163952161471*^9, 3.8741639824322157`*^9, 
+  3.8782848488708053`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"c002212c-9429-409a-9770-754b3dddba44"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"N", "[", 
+      TemplateBox[{"k", "1"},
+       "BesselJ"], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"k", ",", "0", ",", "3"}], "}"}]}], "]"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.8741458716932793`*^9, 3.874145877092571*^9}, {
+  3.878282288798191*^9, 3.8782823568713117`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"ffbf8239-3d37-4f5e-90b4-74a493ae410e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.5303953731159332`", ",", "0.8801011714898671`", ",", 
+   "0.22980696986380095`", ",", "0.03912670796533681`"}], "}"}]], "Output",
+ CellChangeTimes->{3.8782823671011524`*^9, 3.8782848489507103`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"e606b326-e32a-45b9-9ac2-11b6a7d7d5c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sum[(BesselJ[k, x]), {k, -Infinity, Infinity}] ", "Input",
+ CellChangeTimes->{{3.8782845525657654`*^9, 3.878284559099148*^9}, {
+  3.8782847060644054`*^9, 3.878284712422157*^9}, {3.8782847427759323`*^9, 
+  3.8782847630508027`*^9}, {3.878284851643573*^9, 3.878284851922261*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"4c5bd9a3-3b9e-4b93-bc19-ccc91925c224"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.8782845453208227`*^9, 3.8782845550800905`*^9}, 
+   3.8782847132291365`*^9, {3.878284848971654*^9, 3.8782848526900024`*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"0773586b-8e4f-4f0f-a1a3-d4af9e7742dc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Sum", "[", 
+    RowBox[{"(", "BesselJ"}]}], TraditionalForm]],ExpressionUUID->
+  "faaa8933-ac9e-47a0-8d45-5e03b72a7074"],
+ "[k, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"a", "]"}], ")"}], TraditionalForm]],ExpressionUUID->
+  "058b3a74-dbf9-4d6c-88d9-93a8d7bbed47"],
+ ", {k, -Infinity, Infinity}] "
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878284723496885*^9, 3.8782847325433617`*^9}, 
+   3.8782847708937387`*^9, {3.8782848177937202`*^9, 3.8782848251884003`*^9}, {
+   3.8782848645218983`*^9, 3.8782849103275847`*^9}, {3.8782852016597733`*^9, 
+   3.8782852207442403`*^9}, {3.878289149289628*^9, 3.878289150182872*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"ee84b69a-4647-4189-9b34-b5a7cf37b8d7"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "Sum[(BesselJ[k, a]), {k, -Infinity, Infinity}]", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Result", "scanner" -> "Sum", "id" -> "Result", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> "", "primary" -> "true"}, {
+       XMLElement[
+       "minput", {}, {"Sum[BesselJ[k, a], {k, -Infinity, Infinity}]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              RowBox[{
+                UnderoverscriptBox["\[Sum]", 
+                 RowBox[{"k", "=", 
+                   RowBox[{"-", "\[Infinity]"}]}], "\[Infinity]"], 
+                TemplateBox[{"k", "a"}, "BesselJ"]}], "\[LongEqual]", "1"}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["infos", {"count" -> "1"}, {
+       XMLElement[
+       "info", {"text" -> "J_n(z) is the Bessel function of the first kind"}, {
+         XMLElement[
+         "link", {
+          "url" -> "http://reference.wolfram.com/language/ref/BesselJ.html", 
+           "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> 
+           "http://functions.wolfram.com/Bessel-TypeFunctions/BesselJ", 
+           "text" -> "Properties", "title" -> "Wolfram Functions Site"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> 
+           "http://mathworld.wolfram.com/BesselFunctionoftheFirstKind.html", 
+           "text" -> "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "1", "datatypes" -> "Sum", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.551", "parsetiming" -> "0.38", "parsetimedout" -> 
+    "false", "recalculate" -> "", "id" -> 
+    "MSP445914a311112i191g5900004c9a0554252e80h7", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "16", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa446014a311112i191g59000026id97c415iae6aa8350669649384844499", "version" -> 
+    "2.6", "inputstring" -> "Sum[(BesselJ[k, a]), {k, -Infinity, Infinity}]"},
+    Typeset`sessioninfo$$ = {
+   "TimeZone" -> 1., 
+    "Date" -> {2022, 11, 24, 15, 32, 37.1507645`9.32254264347699}, "Line" -> 
+    2, "SessionID" -> 25210759740627369282}, Typeset`showpods$$ = {1}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "Sum[(BesselJ[k, a]), {k, -Infinity, Infinity}]"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$}, {Typeset`aux1$$}, Typeset`chosen$$, 
+        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
+        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
+        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+     StandardForm],
+    ImageSizeCache->{1062., {91.03173828125, 98.96826171875}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.87828915716675*^9},ExpressionUUID->"23833c5d-2c90-4b0b-99f5-2d14d88ab550"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   FormBox[
+    TagBox[
+     RowBox[{"1", "=", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"[", 
+         RowBox[{
+          SubscriptBox["J", "0"], 
+          StyleBox["(",
+           SpanMinSize->1.,
+           SpanMaxSize->1.], "x", 
+          StyleBox[")",
+           SpanMinSize->1.,
+           SpanMaxSize->1.]}], "]"}], "2"], "+", 
+       RowBox[{"2", 
+        RowBox[{
+         UnderoverscriptBox["\[Sum]", 
+          RowBox[{"k", "=", "1"}], 
+          StyleBox["\[Infinity]",
+           FontFamily->"Times",
+           FontWeight->"Plain",
+           FontSlant->"Plain"]], "\[VeryThinSpace]", 
+         SuperscriptBox[
+          RowBox[{"[", 
+           RowBox[{
+            SubscriptBox["J", "k"], 
+            StyleBox["(",
+             SpanMinSize->1.,
+             SpanMaxSize->1.], "x", 
+            StyleBox[")",
+             SpanMinSize->1.,
+             SpanMaxSize->1.]}], "]"}], "2"]}]}]}]}],
+     "MathMLPresentationTag",
+     AutoDelete->True],
+    TraditionalForm], "*)"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8782849508419247`*^9, 3.878284967596294*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"c860013f-0cfc-4cec-a644-bfdc00572084"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"BesselJ", "[", 
+     RowBox[{"0", ",", "x"}], "]"}], "^", "2"}], " ", "+", " ", 
+   RowBox[{"2", "*", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"BesselJ", "[", 
+        RowBox[{"k", ",", "x"}], "]"}], "^", "2"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "1", ",", "Infinity"}], "}"}]}], "]"}]}]}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.878285054571176*^9, 3.878285158952586*^9}},
+ FormatType->"InputForm",
+ CellLabel->"In[34]:=",ExpressionUUID->"450c1171-28ff-4da3-bfae-a1c797df0b46"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.8782850819234886`*^9, {3.878285112368847*^9, 3.8782851595230436`*^9}},
+ CellLabel->"Out[34]=",ExpressionUUID->"2fe4cb62-f2e7-4293-87a7-0b31a2dc96e4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     SuperscriptBox[
+      TemplateBox[{"k", "3"},
+       "BesselJ"], "2"], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", 
+       RowBox[{"-", "6"}], ",", "6"}], "}"}]}], "]"}], "//", "N"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.8782863709421406`*^9, 3.8782863759098577`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"208d9a7f-dfe4-4cb9-9850-177bc94b2bcb"],
+
+Cell[BoxData["0.9999865210265132`"], "Output",
+ CellChangeTimes->{3.8782872484060802`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"39d903ea-0d94-4b2b-9e18-8d0e190bce8b"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 587.4},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+Magnification:>1.5 Inherited,
+FrontEndVersion->"13.1 pour Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8ce8d2ad-6881-4bb2-9a11-28569b218e1c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 283, 5, 64, "Input",ExpressionUUID->"f31a026d-bb44-4ab3-9bd3-7d36726508a3"],
+Cell[866, 29, 231, 4, 48, "Output",ExpressionUUID->"c0cb6ce6-7858-4892-bd4e-ddd8659abb21"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1134, 38, 212, 5, 64, "Input",ExpressionUUID->"5fc2c704-c655-48f0-9bdd-f2640fb2b174"],
+Cell[1349, 45, 194, 2, 48, "Output",ExpressionUUID->"7e255174-6fd8-4e04-a3cb-1ac8b5a19209"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1580, 52, 380, 9, 64, "Input",ExpressionUUID->"80208492-4b05-4b61-9802-149fdc7ff51a"],
+Cell[1963, 63, 353, 7, 48, "Output",ExpressionUUID->"c842bf33-5805-4967-ac55-07ba76193aa7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2353, 75, 510, 12, 64, "Input",ExpressionUUID->"50754bf8-6bff-4e43-8b6f-05ed050d8464"],
+Cell[2866, 89, 428, 9, 48, "Output",ExpressionUUID->"2b8d1629-de86-4222-8ad5-82c451f175ec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3331, 103, 337, 8, 64, "Input",ExpressionUUID->"d3cb4578-bd76-4d7e-badc-5c4d3dcdd07a"],
+Cell[3671, 113, 346, 7, 48, "Output",ExpressionUUID->"cd6b56c2-4a4b-4ac5-a228-1b31a4b360cc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4054, 125, 232, 4, 64, "Input",ExpressionUUID->"2dc207d4-7e6e-45c8-9a5d-c93af8081b07"],
+Cell[4289, 131, 227, 4, 48, "Output",ExpressionUUID->"6f1cef70-5b8d-4987-8d8f-3b43b8f68d2a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4553, 140, 357, 9, 64, "Input",ExpressionUUID->"6d14fd1e-e1f2-457e-93e9-82d109bdef5c"],
+Cell[4913, 151, 218, 3, 48, "Output",ExpressionUUID->"c002212c-9429-409a-9770-754b3dddba44"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5168, 159, 474, 13, 63, "Input",ExpressionUUID->"ffbf8239-3d37-4f5e-90b4-74a493ae410e"],
+Cell[5645, 174, 321, 6, 48, "Output",ExpressionUUID->"e606b326-e32a-45b9-9ac2-11b6a7d7d5c5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6003, 185, 361, 4, 42, "Input",ExpressionUUID->"4c5bd9a3-3b9e-4b93-bc19-ccc91925c224"],
+Cell[6367, 191, 253, 3, 48, "Output",ExpressionUUID->"0773586b-8e4f-4f0f-a1a3-d4af9e7742dc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6657, 199, 765, 18, 60, "WolframAlphaLong",ExpressionUUID->"ee84b69a-4647-4189-9b34-b5a7cf37b8d7"],
+Cell[7425, 219, 5898, 115, 204, "Print",ExpressionUUID->"23833c5d-2c90-4b0b-99f5-2d14d88ab550"]
+}, Open  ]],
+Cell[13338, 337, 1230, 39, 72, "Input",ExpressionUUID->"c860013f-0cfc-4cec-a644-bfdc00572084"],
+Cell[CellGroupData[{
+Cell[14593, 380, 603, 17, 64, "Input",ExpressionUUID->"450c1171-28ff-4da3-bfae-a1c797df0b46"],
+Cell[15199, 399, 202, 3, 48, "Output",ExpressionUUID->"2fe4cb62-f2e7-4293-87a7-0b31a2dc96e4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15438, 407, 444, 13, 67, "Input",ExpressionUUID->"208d9a7f-dfe4-4cb9-9850-177bc94b2bcb"],
+Cell[15885, 422, 168, 2, 48, "Output",ExpressionUUID->"39d903ea-0d94-4b2b-9e18-8d0e190bce8b"]
+}, Open  ]]
+}
+]
+*)
+

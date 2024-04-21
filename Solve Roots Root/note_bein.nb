@@ -1,0 +1,285 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12310,        277]
+NotebookOptionsPosition[     11461,        253]
+NotebookOutlinePosition[     11997,        272]
+CellTagsIndexPosition[     11954,        269]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["D[f(x,y,z),y]=x+z", "WolframAlphaLong",
+ CellChangeTimes->{{3.8931541539354734`*^9, 3.893154176601906*^9}, {
+  3.893155631102661*^9, 3.8931556373702164`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"aafe09d9-01f2-4588-b4fb-e8135e98952d"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "D[f(x,y,z),y]=x+z", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Input", "scanner" -> "Identity", "id" -> "Input", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"D[f[x, y, z], y] == x + z"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             RowBox[{
+               FractionBox[
+                RowBox[{"\[PartialD]", 
+                  RowBox[{"f", "(", 
+                    RowBox[{"x", ",", "y", ",", "z"}], ")"}]}], 
+                RowBox[{"\[PartialD]", "y"}], MultilineFunction -> None], 
+               "\[LongEqual]", 
+               TagBox[
+                RowBox[{"x", "+", "z"}], Identity]}], 
+             PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "ODE classification", "scanner" -> "ODE", "id" -> 
+     "ODEClassification", "position" -> "200", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+           "\"First-order linear partial differential equation\"", 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"plaintext,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`pod3$$ = XMLElement[
+   "pod", {"title" -> "Differential equation solution", "scanner" -> "ODE", 
+     "id" -> "Solution", "position" -> "300", "error" -> "false", 
+     "numsubpods" -> "1", "primary" -> "true"}, {
+     XMLElement["subpod", {"title" -> "", "primary" -> "true"}, {
+       XMLElement[
+       "minput", {}, {
+        "Hold[DSolve][{Derivative[0, 1, 0][f][x, y, z] == x + z}, f[x, y, z], \
+{x, y, z}]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              RowBox[{"f", "(", 
+                RowBox[{"x", ",", "y", ",", "z"}], ")"}], "\[LongEqual]", 
+              RowBox[{
+                RowBox[{
+                  TemplateBox[{"1"}, "CTraditional"], 
+                  "\[InvisibleApplication]", 
+                  RowBox[{"(", 
+                    RowBox[{"x", ",", "z"}], ")"}]}], "+", 
+                RowBox[{"y", " ", 
+                  RowBox[{"(", 
+                    RowBox[{"x", "+", "z"}], ")"}]}]}]}], TraditionalForm]], 
+          "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`aux3$$ = {True, False, {False}, True},
+    Typeset`asyncpods$$ = {}, Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "3", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.787", "parsetiming" -> "0.47900000000000004", 
+    "parsetimedout" -> "false", "recalculate" -> "", "id" -> 
+    "MSP17091i26d2db8647138c000068c9a30ifa89h2h1", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "12", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa17101i26d2db8647138c000047ba0779i89hei9g822558548030476863", "version" -> 
+    "2.6", "inputstring" -> "D[f(x,y,z),y]=x+z"}, Typeset`sessioninfo$$ = {
+   "TimeZone" -> 1., 
+    "Date" -> {2023, 10, 16, 20, 5, 52.9189718`9.47618624471228}, "Line" -> 3,
+     "SessionID" -> 33118614621029825730}, Typeset`showpods$$ = {1, 2, 3}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "D[f(x,y,z),y]=x+z"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$}, Typeset`chosen$$, 
+        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
+        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
+        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+     StandardForm],
+    ImageSizeCache->{
+     1295.1999999999998`, {132.66083986373377`, 139.53916013626625`}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$}], 
+       Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.906471952940213*^9},ExpressionUUID->"1d5d7e01-f3b9-4c9d-a391-\
+5b35a55368b9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[PartialD]", 
+      RowBox[{"f", "(", 
+       RowBox[{"x", ",", "y", ",", "z"}], ")"}]}], 
+     RowBox[{"\[PartialD]", "y"}],
+     MultilineFunction->None], "\[LongEqual]", 
+    RowBox[{"x", "+", "z"}]}],
+   PolynomialForm[#, TraditionalOrder -> False]& ], TraditionalForm]], "Input",
+ CellChangeTimes->{3.8931556771950474`*^9},
+ CellLabel->"In[4]:=",ExpressionUUID->"f027d023-8cfa-4f13-a312-d8de6531b2af"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["f", 
+     TagBox[
+      RowBox[{"(", 
+       RowBox[{"0", ",", "1", ",", "0"}], ")"}],
+      Derivative],
+     MultilineFunction->None], "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}], "\[Equal]", 
+   RowBox[{"x", "+", "z"}]}],
+  PolynomialForm[#, TraditionalOrder -> False]& ]], "Output",
+ CellChangeTimes->{3.893155678834297*^9, 3.9064719534863544`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"e797039d-2328-423e-9d84-03a55d0b63bd"]
+}, Open  ]]
+},
+WindowSize->{1368.7128712871288`, 702.8910891089109},
+WindowMargins->{{
+  Automatic, -5.702970297029651}, {-5.702970297029651, Automatic}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+Magnification:>1.3 Inherited,
+FrontEndVersion->"13.3 pour Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ced4f9a0-0226-48cc-a5f6-167a20e19e60"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 242, 3, 51, "WolframAlphaLong",ExpressionUUID->"aafe09d9-01f2-4588-b4fb-e8135e98952d"],
+Cell[825, 27, 9593, 189, 284, "Print",ExpressionUUID->"1d5d7e01-f3b9-4c9d-a391-5b35a55368b9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10455, 221, 484, 13, 62, "Input",ExpressionUUID->"f027d023-8cfa-4f13-a312-d8de6531b2af"],
+Cell[10942, 236, 503, 14, 60, "Output",ExpressionUUID->"e797039d-2328-423e-9d84-03a55d0b63bd"]
+}, Open  ]]
+}
+]
+*)
+
